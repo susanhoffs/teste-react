@@ -7,13 +7,13 @@ import './index.css'
 
 const Layout = ({ children, data }) => (
   <div>
-    {/* <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    /> */}
+      <Helmet
+        title={data.site.siteMetadata.title}
+        meta={[
+          { name: 'description', content: data.site.siteMetadata.description },
+          { name: 'keywords', content: data.site.siteMetadata.keywords },
+        ]}
+      />
       <Header />
       {children()}
   </div>
@@ -30,6 +30,8 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
+        keywords
       }
     }
   }
