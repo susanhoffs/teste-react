@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/card';
+import Section from '../components/section';
 
 const IndexPage = () => (
   <div>
@@ -52,6 +53,11 @@ const IndexPage = () => (
               image={require('../images/wallpaper4.jpg')} />
         </div>
       </div>
+      <Section
+      image={require('../images/wallpaper2.jpg')}
+      logo={require('../images/logo-react.png')}
+      title="React for Designers"
+      text="Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify." />
     </div>
   </div>
 )
