@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Card from '../components/card';
-import Section from '../components/section';
+import Card from '../components/card'
+import Section from '../components/section'
+import Wave from '../components/wave'
 
 const IndexPage = () => (
   <div>
@@ -30,6 +31,7 @@ const IndexPage = () => (
           <img src={require('../images/logo-react.png')} width="50" />
           <img src={require('../images/logo-swift.png')} width="50" />
         </div>
+        <Wave />
       </div>
       <div className="Cards">
           <h2>11 courses, more coming</h2>
